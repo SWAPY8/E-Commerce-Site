@@ -23,7 +23,7 @@
 }
 
 .product-card:hover {
-  transform: translateY(-8px) rotate(1deg);
+  
   box-shadow: var(--shadow-2xl);
 }
 
@@ -51,7 +51,8 @@
 }
 
 .product-card:hover .product-image {
-  transform: scale(1.1) rotate(-2deg);
+  box-shadow: var(--shadow-2xl);
+  scale: 1.05;
 }
 
 .product-content {
