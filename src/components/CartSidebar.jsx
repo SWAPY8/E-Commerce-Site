@@ -56,7 +56,7 @@ const CartSidebar = ({ isOpen, onClose }) => {
                         {item.title}
                       </h3>
                       <p className="cart-item-price">
-                        Rs {Math.round(product.price * 83)}
+                        Rs {Math.round(item.price * 83)}
                       </p>
                       <div className="cart-item-controls">
                         <div className="quantity-controls">
@@ -84,7 +84,7 @@ const CartSidebar = ({ isOpen, onClose }) => {
                         </button>
                       </div>
                       <p className="cart-item-subtotal">
-                        Subtotal: Rs {(item.price * item.quantity).toFixed(2)}
+                        Subtotal: Rs {(Math.round(item.price * 83)* item.quantity).toFixed(2)}
                       </p>
                     </div>
                   </div>
