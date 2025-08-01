@@ -37,7 +37,7 @@ const ProductCard = ({ product, onViewDetails }) => {
           </span>
         </div>
         <p className="product-price">
-          ${product.price}
+          Rs {Math.round(product.price * 83)}
         </p>
         <div className="product-actions">
           <button

@@ -61,7 +61,7 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
               
               <div className="product-modal-price">
                 <p className="modal-price-text">
-                  ${product.price}
+                  RS {product.price}
                 </p>
               </div>
               

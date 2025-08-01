@@ -11,7 +11,7 @@ const Header = ({ onCartToggle }) => {
       <div className="container">
         <div className="header-content">
           <div className="logo-section">
-            <a href="#" className="logo">Luxe Store</a>
+            <a href="#" className="logo">SWAPY'S  WORLD</a>
             <div className="tagline">Premium Shopping Experience</div>
           </div>
           <button

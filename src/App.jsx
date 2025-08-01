@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CartProvider } from './context/CartContext';
 import Header from './components/Header';
+import Contact from "./components/Contact";
 import ProductListing from './components/ProductListing';
 import CartSidebar from './components/CartSidebar';
 import './styles/App.css';
