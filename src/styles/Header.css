@@ -1,0 +1,95 @@
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-lg) 0;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+}
+
+.tagline {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  font-weight: 300;
+  margin-top: 2px;
+}
+
+.cart-button {
+  position: relative;
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  padding: var(--space-md);
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-lg);
+}
+
+.cart-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: var(--shadow-2xl);
+}
+
+.cart-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--accent-rose);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 50px;
+  min-width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+  box-shadow: 0 4px 12px rgba(244, 63, 94, 0.4);
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: var(--space-md) 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .tagline {
+    display: none;
+  }
+}
